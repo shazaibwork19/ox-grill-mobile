@@ -1,0 +1,1 @@
+{"success":false,"error":{"code":"VALIDATION_ERROR","message":"Invalid request params","details":[{"path":"params.token","message":"Too small: expected string to have >=20 characters","code":"too_small"}]},"requestId":"ba03beb9-8e05-4528-aef4-697797fbcf3f"}

@@ -1,0 +1,158 @@
+{
+ "_note": "MOCK: hand-written from the OpenAPI schema (PublicOrderStatus). No real order was placed.",
+ "success": true,
+ "data": {
+  "order": {
+   "id": "mock-order-1",
+   "orderNumber": "OG-MOCK-1001",
+   "branchId": "cmuxu7tgo0000qkfvy7vg5wun",
+   "branchName": "Ox & Grill F-7 Markaz",
+   "type": "DELIVERY",
+   "status": "PENDING",
+   "source": "MOBILE",
+   "paymentMethod": "CASH_ON_DELIVERY",
+   "paymentStatus": "PENDING",
+   "customerName": "Test Customer",
+   "customerPhone": "+923001234567",
+   "itemCount": 2,
+   "total": 244680,
+   "currency": "PKR",
+   "tableRef": null,
+   "placedAt": "2026-10-28T15:00:00.000Z",
+   "updatedAt": "2026-10-28T15:00:00.000Z",
+   "items": [
+    {
+     "id": "mock-item-1",
+     "menuItemId": "cmuxu7tpl0025qkfv5x12fvnm",
+     "name": "Beef Chilli Fries",
+     "quantity": 2,
+     "unitPrice": 99000,
+     "optionsTotal": 0,
+     "lineTotal": 198000,
+     "notes": null,
+     "options": []
+    }
+   ],
+   "totals": {
+    "subtotal": 198000,
+    "discountTotal": 0,
+    "taxTotal": 31680,
+    "taxRateBps": 1600,
+    "deliveryFee": 15000,
+    "total": 244680,
+    "currency": "PKR"
+   },
+   "notes": null,
+   "pickupName": null,
+   "delivery": {
+    "addressLine": "House 7, Street 12, F-7/2",
+    "area": "F-7",
+    "city": "Islamabad",
+    "latitude": null,
+    "longitude": null,
+    "instructions": "Blue gate"
+   },
+   "payment": {
+    "id": "mock-pay-1",
+    "method": "CASH_ON_DELIVERY",
+    "provider": "cash",
+    "status": "PENDING",
+    "amount": 244680,
+    "refundedAmount": 0,
+    "providerReference": null,
+    "paidAt": null,
+    "checkoutUrl": null
+   },
+   "assignment": null,
+   "estimatedReadyAt": null,
+   "confirmedAt": null,
+   "readyAt": null,
+   "completedAt": null,
+   "cancelledAt": null,
+   "cancelReason": null,
+   "canCancel": false,
+   "allowedTransitions": [],
+   "history": [
+    {
+     "id": "mock-h-1",
+     "fromStatus": null,
+     "toStatus": "PENDING",
+     "actorRole": "CUSTOMER",
+     "actorName": null,
+     "reason": null,
+     "createdAt": "2026-10-28T15:00:00.000Z"
+    }
+   ],
+   "reviewed": false
+  },
+  "tracking": {
+   "orderId": "mock-order-1",
+   "orderNumber": "OG-MOCK-1001",
+   "type": "DELIVERY",
+   "status": "PENDING",
+   "steps": [
+    {
+     "status": "PENDING",
+     "label": "Not confirmed yet",
+     "reachedAt": "2026-10-28T15:00:00.000Z",
+     "state": "current"
+    },
+    {
+     "status": "CONFIRMED",
+     "label": "Confirmed",
+     "reachedAt": null,
+     "state": "upcoming"
+    },
+    {
+     "status": "PREPARING",
+     "label": "Preparing",
+     "reachedAt": null,
+     "state": "upcoming"
+    },
+    {
+     "status": "READY",
+     "label": "Prepared",
+     "reachedAt": null,
+     "state": "upcoming"
+    },
+    {
+     "status": "OUT_FOR_DELIVERY",
+     "label": "On the way",
+     "reachedAt": null,
+     "state": "upcoming"
+    },
+    {
+     "status": "DELIVERED",
+     "label": "Received",
+     "reachedAt": null,
+     "state": "upcoming"
+    },
+    {
+     "status": "COMPLETED",
+     "label": "Completed",
+     "reachedAt": null,
+     "state": "upcoming"
+    }
+   ],
+   "history": [
+    {
+     "id": "mock-h-1",
+     "fromStatus": null,
+     "toStatus": "PENDING",
+     "actorRole": "CUSTOMER",
+     "actorName": null,
+     "reason": null,
+     "createdAt": "2026-10-28T15:00:00.000Z"
+    }
+   ],
+   "estimatedReadyAt": null,
+   "rider": null,
+   "riderLocation": null,
+   "branch": {
+    "id": "cmuxu7tgo0000qkfvy7vg5wun",
+    "name": "Ox & Grill F-7 Markaz",
+    "phone": "+923258875554"
+   }
+  }
+ }
+}

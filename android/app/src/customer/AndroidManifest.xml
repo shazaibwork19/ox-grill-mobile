@@ -1,0 +1,13 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <application>
+        <activity android:name=".MainActivity">
+            <!-- Customer app only: deep link to an order's status page, oxgrill://app/track/{trackingToken} -->
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="oxgrill" android:host="app" android:pathPrefix="/track/"/>
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>

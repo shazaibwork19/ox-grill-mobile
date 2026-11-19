@@ -1,0 +1,49 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Customer app (test server)",
+      "request": "launch",
+      "type": "dart",
+      "program": "lib/main.dart",
+      "args": [
+        "--flavor", "customer",
+        "--dart-define=API_BASE_URL=https://api.32-236-141-77.sslip.io/api/v1",
+        "--dart-define=APP_ENV=test"
+      ]
+    },
+    {
+      "name": "Staff app (test server)",
+      "request": "launch",
+      "type": "dart",
+      "program": "lib/main_staff.dart",
+      "args": [
+        "--flavor", "staff",
+        "--dart-define=API_BASE_URL=https://api.32-236-141-77.sslip.io/api/v1",
+        "--dart-define=APP_ENV=test"
+      ]
+    },
+    {
+      "name": "Customer app (production — set the URL first)",
+      "request": "launch",
+      "type": "dart",
+      "program": "lib/main.dart",
+      "args": [
+        "--flavor", "customer",
+        "--dart-define=API_BASE_URL=https://REPLACE-WITH-PRODUCTION-HOST/api/v1",
+        "--dart-define=APP_ENV=production"
+      ]
+    },
+    {
+      "name": "Staff app (production — set the URL first)",
+      "request": "launch",
+      "type": "dart",
+      "program": "lib/main_staff.dart",
+      "args": [
+        "--flavor", "staff",
+        "--dart-define=API_BASE_URL=https://REPLACE-WITH-PRODUCTION-HOST/api/v1",
+        "--dart-define=APP_ENV=production"
+      ]
+    }
+  ]
+}
